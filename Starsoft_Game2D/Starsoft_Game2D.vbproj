@@ -183,5 +183,8 @@
   <ItemGroup>
     <None Include="bin\Debug\src\tex_ball_lava.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

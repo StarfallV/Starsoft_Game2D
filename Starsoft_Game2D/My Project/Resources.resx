@@ -130,12 +130,6 @@
   <data name="chr_front_a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\src\chr_front_a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tex_grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\src\tex_grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="obj_pohon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\src\obj_pohon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tex_grass_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\src\tex_grass_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,16 +154,25 @@
   <data name="chr_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\src\chr_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tex_ball_lava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\src\tex_ball_lava.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chr_left_a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\src\chr_left_a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chr_right_a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\src\chr_right_a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tex_path" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\src\tex_path.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tex_ball_lava" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\src\tex_ball_lava.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="obj_pohon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\src\obj_pohon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chr_right_a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\src\chr_right_a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tex_grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\src\tex_grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

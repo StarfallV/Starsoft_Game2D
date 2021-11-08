@@ -107,7 +107,7 @@
     Private Sub points_TextChanged(sender As Object, e As EventArgs) Handles points.TextChanged
         scorepoints = points.Text
         If scorepoints >= 1200 Then
-            MessageBox.Show("Yey ambon 1200")
+            MessageBox.Show("Selamat! Anda adalah pahlawan sampah yang hebat!")
         End If
     End Sub
 
