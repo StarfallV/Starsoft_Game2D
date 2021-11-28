@@ -26,6 +26,11 @@ Partial Class frmGame
         Me.Label1 = New System.Windows.Forms.Label()
         Me.points = New System.Windows.Forms.Label()
         Me.Land = New System.Windows.Forms.Panel()
+        Me.obj_pohon3 = New System.Windows.Forms.PictureBox()
+        Me.obj_pohon2 = New System.Windows.Forms.PictureBox()
+        Me.obj_pohon18 = New System.Windows.Forms.PictureBox()
+        Me.player = New System.Windows.Forms.PictureBox()
+        Me.obj_trash2 = New System.Windows.Forms.PictureBox()
         Me.obj_lava7 = New System.Windows.Forms.PictureBox()
         Me.obj_lava8 = New System.Windows.Forms.PictureBox()
         Me.obj_lava9 = New System.Windows.Forms.PictureBox()
@@ -33,7 +38,6 @@ Partial Class frmGame
         Me.obj_lava10 = New System.Windows.Forms.PictureBox()
         Me.obj_trash1 = New System.Windows.Forms.PictureBox()
         Me.obj_pohon17 = New System.Windows.Forms.PictureBox()
-        Me.obj_pohon18 = New System.Windows.Forms.PictureBox()
         Me.obj_pohon16 = New System.Windows.Forms.PictureBox()
         Me.obj_lava13 = New System.Windows.Forms.PictureBox()
         Me.obj_lava12 = New System.Windows.Forms.PictureBox()
@@ -50,8 +54,6 @@ Partial Class frmGame
         Me.obj_pohon8 = New System.Windows.Forms.PictureBox()
         Me.obj_pohon11 = New System.Windows.Forms.PictureBox()
         Me.obj_pohon7 = New System.Windows.Forms.PictureBox()
-        Me.obj_pohon3 = New System.Windows.Forms.PictureBox()
-        Me.obj_pohon2 = New System.Windows.Forms.PictureBox()
         Me.obj_lava2 = New System.Windows.Forms.PictureBox()
         Me.obj_lava3 = New System.Windows.Forms.PictureBox()
         Me.obj_lava1 = New System.Windows.Forms.PictureBox()
@@ -59,11 +61,9 @@ Partial Class frmGame
         Me.obj_border_right = New System.Windows.Forms.PictureBox()
         Me.obj_border_bot = New System.Windows.Forms.PictureBox()
         Me.obj_border_top = New System.Windows.Forms.PictureBox()
-        Me.player = New System.Windows.Forms.PictureBox()
         Me.obj_pohon4 = New System.Windows.Forms.PictureBox()
         Me.obj_pohon1 = New System.Windows.Forms.PictureBox()
         Me.obj_pohon5 = New System.Windows.Forms.PictureBox()
-        Me.obj_trash2 = New System.Windows.Forms.PictureBox()
         Me.obj_trash4 = New System.Windows.Forms.PictureBox()
         Me.obj_trash3 = New System.Windows.Forms.PictureBox()
         Me.AnimNum = New System.Windows.Forms.Label()
@@ -71,6 +71,11 @@ Partial Class frmGame
         Me.obj_pohon6 = New System.Windows.Forms.PictureBox()
         Me.obj_pohon13 = New System.Windows.Forms.PictureBox()
         Me.Land.SuspendLayout()
+        CType(Me.obj_pohon3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.obj_pohon2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.obj_pohon18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.player, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.obj_trash2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,7 +83,6 @@ Partial Class frmGame
         CType(Me.obj_lava10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_trash1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.obj_pohon18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,8 +99,6 @@ Partial Class frmGame
         CType(Me.obj_pohon8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.obj_pohon3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.obj_pohon2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_lava1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,11 +106,9 @@ Partial Class frmGame
         CType(Me.obj_border_right, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_border_bot, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_border_top, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.player, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.obj_trash2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_trash4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_trash3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obj_pohon6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -143,6 +143,9 @@ Partial Class frmGame
         '
         Me.Land.BackColor = System.Drawing.Color.ForestGreen
         Me.Land.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Land.Controls.Add(Me.obj_pohon3)
+        Me.Land.Controls.Add(Me.obj_pohon2)
+        Me.Land.Controls.Add(Me.obj_pohon18)
         Me.Land.Controls.Add(Me.player)
         Me.Land.Controls.Add(Me.obj_trash2)
         Me.Land.Controls.Add(Me.obj_lava7)
@@ -152,7 +155,6 @@ Partial Class frmGame
         Me.Land.Controls.Add(Me.obj_lava10)
         Me.Land.Controls.Add(Me.obj_trash1)
         Me.Land.Controls.Add(Me.obj_pohon17)
-        Me.Land.Controls.Add(Me.obj_pohon18)
         Me.Land.Controls.Add(Me.obj_pohon16)
         Me.Land.Controls.Add(Me.obj_lava13)
         Me.Land.Controls.Add(Me.obj_lava12)
@@ -169,8 +171,6 @@ Partial Class frmGame
         Me.Land.Controls.Add(Me.obj_pohon8)
         Me.Land.Controls.Add(Me.obj_pohon11)
         Me.Land.Controls.Add(Me.obj_pohon7)
-        Me.Land.Controls.Add(Me.obj_pohon3)
-        Me.Land.Controls.Add(Me.obj_pohon2)
         Me.Land.Controls.Add(Me.obj_lava2)
         Me.Land.Controls.Add(Me.obj_lava3)
         Me.Land.Controls.Add(Me.obj_lava1)
@@ -191,6 +191,67 @@ Partial Class frmGame
         Me.Land.Name = "Land"
         Me.Land.Size = New System.Drawing.Size(1072, 668)
         Me.Land.TabIndex = 0
+        '
+        'obj_pohon3
+        '
+        Me.obj_pohon3.BackColor = System.Drawing.Color.Transparent
+        Me.obj_pohon3.BackgroundImage = Global.Starsoft_Game2D.My.Resources.Resources.obj_pohon
+        Me.obj_pohon3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.obj_pohon3.Location = New System.Drawing.Point(206, 202)
+        Me.obj_pohon3.Name = "obj_pohon3"
+        Me.obj_pohon3.Size = New System.Drawing.Size(108, 129)
+        Me.obj_pohon3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.obj_pohon3.TabIndex = 20
+        Me.obj_pohon3.TabStop = False
+        '
+        'obj_pohon2
+        '
+        Me.obj_pohon2.BackColor = System.Drawing.Color.Transparent
+        Me.obj_pohon2.BackgroundImage = CType(resources.GetObject("obj_pohon2.BackgroundImage"), System.Drawing.Image)
+        Me.obj_pohon2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.obj_pohon2.Location = New System.Drawing.Point(179, 111)
+        Me.obj_pohon2.Name = "obj_pohon2"
+        Me.obj_pohon2.Size = New System.Drawing.Size(108, 129)
+        Me.obj_pohon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.obj_pohon2.TabIndex = 9
+        Me.obj_pohon2.TabStop = False
+        '
+        'obj_pohon18
+        '
+        Me.obj_pohon18.BackColor = System.Drawing.Color.Transparent
+        Me.obj_pohon18.BackgroundImage = CType(resources.GetObject("obj_pohon18.BackgroundImage"), System.Drawing.Image)
+        Me.obj_pohon18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.obj_pohon18.Location = New System.Drawing.Point(128, 11)
+        Me.obj_pohon18.Name = "obj_pohon18"
+        Me.obj_pohon18.Size = New System.Drawing.Size(108, 129)
+        Me.obj_pohon18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.obj_pohon18.TabIndex = 47
+        Me.obj_pohon18.TabStop = False
+        '
+        'player
+        '
+        Me.player.BackColor = System.Drawing.Color.Transparent
+        Me.player.BackgroundImage = Global.Starsoft_Game2D.My.Resources.Resources.chr_front
+        Me.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.player.Location = New System.Drawing.Point(44, 49)
+        Me.player.Name = "player"
+        Me.player.Size = New System.Drawing.Size(53, 80)
+        Me.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.player.TabIndex = 5
+        Me.player.TabStop = False
+        '
+        'obj_trash2
+        '
+        Me.obj_trash2.BackColor = System.Drawing.Color.Transparent
+        Me.obj_trash2.BackgroundImage = CType(resources.GetObject("obj_trash2.BackgroundImage"), System.Drawing.Image)
+        Me.obj_trash2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.obj_trash2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.obj_trash2.Location = New System.Drawing.Point(443, 164)
+        Me.obj_trash2.Name = "obj_trash2"
+        Me.obj_trash2.Size = New System.Drawing.Size(48, 42)
+        Me.obj_trash2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.obj_trash2.TabIndex = 16
+        Me.obj_trash2.TabStop = False
         '
         'obj_lava7
         '
@@ -263,7 +324,7 @@ Partial Class frmGame
         Me.obj_trash1.BackgroundImage = CType(resources.GetObject("obj_trash1.BackgroundImage"), System.Drawing.Image)
         Me.obj_trash1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.obj_trash1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.obj_trash1.Location = New System.Drawing.Point(950, 43)
+        Me.obj_trash1.Location = New System.Drawing.Point(978, 552)
         Me.obj_trash1.Name = "obj_trash1"
         Me.obj_trash1.Size = New System.Drawing.Size(48, 42)
         Me.obj_trash1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -281,18 +342,6 @@ Partial Class frmGame
         Me.obj_pohon17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.obj_pohon17.TabIndex = 48
         Me.obj_pohon17.TabStop = False
-        '
-        'obj_pohon18
-        '
-        Me.obj_pohon18.BackColor = System.Drawing.Color.Transparent
-        Me.obj_pohon18.BackgroundImage = CType(resources.GetObject("obj_pohon18.BackgroundImage"), System.Drawing.Image)
-        Me.obj_pohon18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.obj_pohon18.Location = New System.Drawing.Point(795, 370)
-        Me.obj_pohon18.Name = "obj_pohon18"
-        Me.obj_pohon18.Size = New System.Drawing.Size(108, 129)
-        Me.obj_pohon18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.obj_pohon18.TabIndex = 47
-        Me.obj_pohon18.TabStop = False
         '
         'obj_pohon16
         '
@@ -374,7 +423,7 @@ Partial Class frmGame
         Me.obj_trash6.BackgroundImage = CType(resources.GetObject("obj_trash6.BackgroundImage"), System.Drawing.Image)
         Me.obj_trash6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.obj_trash6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.obj_trash6.Location = New System.Drawing.Point(950, 540)
+        Me.obj_trash6.Location = New System.Drawing.Point(665, 356)
         Me.obj_trash6.Name = "obj_trash6"
         Me.obj_trash6.Size = New System.Drawing.Size(48, 42)
         Me.obj_trash6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -426,7 +475,7 @@ Partial Class frmGame
         Me.obj_trash5.BackgroundImage = CType(resources.GetObject("obj_trash5.BackgroundImage"), System.Drawing.Image)
         Me.obj_trash5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.obj_trash5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.obj_trash5.Location = New System.Drawing.Point(416, 560)
+        Me.obj_trash5.Location = New System.Drawing.Point(74, 560)
         Me.obj_trash5.Name = "obj_trash5"
         Me.obj_trash5.Size = New System.Drawing.Size(48, 42)
         Me.obj_trash5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -493,30 +542,6 @@ Partial Class frmGame
         Me.obj_pohon7.TabIndex = 29
         Me.obj_pohon7.TabStop = False
         '
-        'obj_pohon3
-        '
-        Me.obj_pohon3.BackColor = System.Drawing.Color.Transparent
-        Me.obj_pohon3.BackgroundImage = CType(resources.GetObject("obj_pohon3.BackgroundImage"), System.Drawing.Image)
-        Me.obj_pohon3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.obj_pohon3.Location = New System.Drawing.Point(206, 202)
-        Me.obj_pohon3.Name = "obj_pohon3"
-        Me.obj_pohon3.Size = New System.Drawing.Size(108, 129)
-        Me.obj_pohon3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.obj_pohon3.TabIndex = 20
-        Me.obj_pohon3.TabStop = False
-        '
-        'obj_pohon2
-        '
-        Me.obj_pohon2.BackColor = System.Drawing.Color.Transparent
-        Me.obj_pohon2.BackgroundImage = CType(resources.GetObject("obj_pohon2.BackgroundImage"), System.Drawing.Image)
-        Me.obj_pohon2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.obj_pohon2.Location = New System.Drawing.Point(165, 104)
-        Me.obj_pohon2.Name = "obj_pohon2"
-        Me.obj_pohon2.Size = New System.Drawing.Size(108, 129)
-        Me.obj_pohon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.obj_pohon2.TabIndex = 9
-        Me.obj_pohon2.TabStop = False
-        '
         'obj_lava2
         '
         Me.obj_lava2.BackColor = System.Drawing.Color.Transparent
@@ -549,7 +574,7 @@ Partial Class frmGame
         Me.obj_lava1.BackgroundImage = Global.Starsoft_Game2D.My.Resources.Resources.tex_ball_lava
         Me.obj_lava1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.obj_lava1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.obj_lava1.Location = New System.Drawing.Point(94, 140)
+        Me.obj_lava1.Location = New System.Drawing.Point(404, 64)
         Me.obj_lava1.Name = "obj_lava1"
         Me.obj_lava1.Size = New System.Drawing.Size(50, 50)
         Me.obj_lava1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -589,24 +614,12 @@ Partial Class frmGame
         Me.obj_border_top.TabIndex = 22
         Me.obj_border_top.TabStop = False
         '
-        'player
-        '
-        Me.player.BackColor = System.Drawing.Color.Transparent
-        Me.player.BackgroundImage = Global.Starsoft_Game2D.My.Resources.Resources.chr_front
-        Me.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.player.Location = New System.Drawing.Point(25, 23)
-        Me.player.Name = "player"
-        Me.player.Size = New System.Drawing.Size(53, 80)
-        Me.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.player.TabIndex = 5
-        Me.player.TabStop = False
-        '
         'obj_pohon4
         '
         Me.obj_pohon4.BackColor = System.Drawing.Color.Transparent
         Me.obj_pohon4.BackgroundImage = CType(resources.GetObject("obj_pohon4.BackgroundImage"), System.Drawing.Image)
         Me.obj_pohon4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.obj_pohon4.Location = New System.Drawing.Point(3, 274)
+        Me.obj_pohon4.Location = New System.Drawing.Point(0, 235)
         Me.obj_pohon4.Name = "obj_pohon4"
         Me.obj_pohon4.Size = New System.Drawing.Size(108, 129)
         Me.obj_pohon4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -618,7 +631,7 @@ Partial Class frmGame
         Me.obj_pohon1.BackColor = System.Drawing.Color.Transparent
         Me.obj_pohon1.BackgroundImage = CType(resources.GetObject("obj_pohon1.BackgroundImage"), System.Drawing.Image)
         Me.obj_pohon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.obj_pohon1.Location = New System.Drawing.Point(108, 11)
+        Me.obj_pohon1.Location = New System.Drawing.Point(809, 361)
         Me.obj_pohon1.Name = "obj_pohon1"
         Me.obj_pohon1.Size = New System.Drawing.Size(108, 129)
         Me.obj_pohon1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -637,26 +650,13 @@ Partial Class frmGame
         Me.obj_pohon5.TabIndex = 18
         Me.obj_pohon5.TabStop = False
         '
-        'obj_trash2
-        '
-        Me.obj_trash2.BackColor = System.Drawing.Color.Transparent
-        Me.obj_trash2.BackgroundImage = CType(resources.GetObject("obj_trash2.BackgroundImage"), System.Drawing.Image)
-        Me.obj_trash2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.obj_trash2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.obj_trash2.Location = New System.Drawing.Point(695, 361)
-        Me.obj_trash2.Name = "obj_trash2"
-        Me.obj_trash2.Size = New System.Drawing.Size(48, 42)
-        Me.obj_trash2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.obj_trash2.TabIndex = 16
-        Me.obj_trash2.TabStop = False
-        '
         'obj_trash4
         '
         Me.obj_trash4.BackColor = System.Drawing.Color.Transparent
         Me.obj_trash4.BackgroundImage = CType(resources.GetObject("obj_trash4.BackgroundImage"), System.Drawing.Image)
         Me.obj_trash4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.obj_trash4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.obj_trash4.Location = New System.Drawing.Point(39, 225)
+        Me.obj_trash4.Location = New System.Drawing.Point(960, 20)
         Me.obj_trash4.Name = "obj_trash4"
         Me.obj_trash4.Size = New System.Drawing.Size(48, 42)
         Me.obj_trash4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -669,7 +669,7 @@ Partial Class frmGame
         Me.obj_trash3.BackgroundImage = CType(resources.GetObject("obj_trash3.BackgroundImage"), System.Drawing.Image)
         Me.obj_trash3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.obj_trash3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.obj_trash3.Location = New System.Drawing.Point(30, 552)
+        Me.obj_trash3.Location = New System.Drawing.Point(144, 418)
         Me.obj_trash3.Name = "obj_trash3"
         Me.obj_trash3.Size = New System.Drawing.Size(48, 42)
         Me.obj_trash3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -703,7 +703,7 @@ Partial Class frmGame
         'obj_pohon6
         '
         Me.obj_pohon6.BackColor = System.Drawing.Color.Transparent
-        Me.obj_pohon6.BackgroundImage = CType(resources.GetObject("obj_pohon6.BackgroundImage"), System.Drawing.Image)
+        Me.obj_pohon6.BackgroundImage = Global.Starsoft_Game2D.My.Resources.Resources.obj_pohon
         Me.obj_pohon6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.obj_pohon6.Location = New System.Drawing.Point(260, 0)
         Me.obj_pohon6.Name = "obj_pohon6"
@@ -742,6 +742,11 @@ Partial Class frmGame
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Land.ResumeLayout(False)
         Me.Land.PerformLayout()
+        CType(Me.obj_pohon3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.obj_pohon2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.obj_pohon18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.player, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.obj_trash2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -749,7 +754,6 @@ Partial Class frmGame
         CType(Me.obj_lava10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_trash1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.obj_pohon18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava12, System.ComponentModel.ISupportInitialize).EndInit()
@@ -766,8 +770,6 @@ Partial Class frmGame
         CType(Me.obj_pohon8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.obj_pohon3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.obj_pohon2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_lava1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -775,11 +777,9 @@ Partial Class frmGame
         CType(Me.obj_border_right, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_border_bot, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_border_top, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.player, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.obj_trash2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_trash4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_trash3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.obj_pohon6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -800,10 +800,8 @@ Partial Class frmGame
     Friend WithEvents obj_trash3 As PictureBox
     Friend WithEvents player As PictureBox
     Friend WithEvents obj_pohon4 As PictureBox
-    Friend WithEvents obj_pohon3 As PictureBox
     Friend WithEvents obj_pohon1 As PictureBox
     Friend WithEvents obj_pohon5 As PictureBox
-    Friend WithEvents obj_border_top As PictureBox
     Friend WithEvents obj_border_bot As PictureBox
     Friend WithEvents obj_border_left As PictureBox
     Friend WithEvents obj_border_right As PictureBox
@@ -836,4 +834,6 @@ Partial Class frmGame
     Friend WithEvents obj_lava9 As PictureBox
     Friend WithEvents obj_lava11 As PictureBox
     Friend WithEvents obj_lava10 As PictureBox
+    Friend WithEvents obj_pohon3 As PictureBox
+    Friend WithEvents obj_border_top As PictureBox
 End Class

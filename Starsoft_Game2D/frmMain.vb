@@ -1,11 +1,16 @@
 ﻿Public Class frmMain
 
-    Dim game As frmGame
+    Public game As frmGame
 
     Private Sub btnMain_Click(sender As Object, e As EventArgs) Handles btnMain.Click
+        'pembuatan objek frmGame baru
         game = New frmGame
+
+        'mengatur form
         game.TopLevel = False
         game.Parent = Me
+
+        'menampilkan game
         game.Show()
     End Sub
 
@@ -87,5 +92,9 @@
 
     Private Sub btnKeluar_Click(sender As Object, e As EventArgs) Handles btnKeluar.Click
         End
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
